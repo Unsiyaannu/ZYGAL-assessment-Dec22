@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons Grid</title>
+    </head>
+    <body>
+        <div id="btns" style="width:75%;">
+        </div>
+        <script>
+            for(var i=0;i<9;i++){
+                var index=i+1;
+                var element = document.createElement("input");
+                element.type = "button";               
+                element.value = index;
+                element.id = "btn"+index;
+                element.setAttribute("style","width:30%;height:48px;font-size:24px");
+                var foo = document.getElementById("btns");
+                //Append the element in page (in span).  
+                foo.appendChild(element);
+            }
+            document.getElementById("btn5").onclick=function(){
+                
+            }
+        </script>
+    </body>
+</html>
